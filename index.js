@@ -8,7 +8,10 @@ app.use(cors());
 
 const profiles = [
   {
-    id: 1, firstname: "Jolly", birthdate: new Date("1990-10-10")
+    id: 1, firstname: "Jolly",
+    birthdate: new Date(
+      "1990-10-10"
+    )
   }
 ];
 
