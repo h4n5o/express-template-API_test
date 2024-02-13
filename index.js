@@ -24,6 +24,9 @@ app.get(
 app.get(
   "/profile", (req, res) => {
     res.json({ profile: { name: "Igor" } });
+    console.log("REQUEST", req.query);
+    const userId = parseInt(req.query.userId);
+    const userProfile = profiles.find((item) => item.Id === userId);
   }
 );
 
